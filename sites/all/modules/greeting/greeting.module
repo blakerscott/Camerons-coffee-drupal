@@ -2,7 +2,7 @@
 
 function greeting_menu() {
     $items = array();
-    $items['hello_freind'] = array(
+    $items['hello_friend'] = array(
             'title' => "Hello Friend!",
             'page callback' => 'say_hello',
             'access callback' => TRUE,
@@ -23,4 +23,12 @@ function say_hello() {
 
 function say_goodbye() {
     return '<p>Goodbye my dear friend!</p>';
+}
+
+function greeting_user_login() {
+    $_GET['destination'] = 'hello_friend';
+}
+
+function greeting_user_logout() {
+    $_GET['destination'] = 'goodbye';
 }
