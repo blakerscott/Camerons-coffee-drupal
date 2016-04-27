@@ -15,6 +15,6 @@ function hello() {
     return '<p>Hello New User!</p>';
 }
 
-function greeting_user_insert() {
+function hello_user_insert() {
     $_GET['destination'] = 'new_user';
 }
